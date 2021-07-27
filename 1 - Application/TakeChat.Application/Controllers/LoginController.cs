@@ -34,9 +34,9 @@ namespace TODO.Application.Controllers
         public async Task<ActionResult<UserToken>> Login([FromBody] UserDto userDto)
         {
             // var user = _userService.Authenticate(userDto.Username, userDto.Password);
-            var loginDb = await _context.Login
-                               .Where(L => L.UserLogin == userDto.Login.Trim() && L.Pass == userDto.Password.Trim())
-                               .FirstOrDefaultAsync();
+            //var loginDb = await _context.Login
+            //                   .Where(L => L.UserLogin == userDto.Login.Trim() && L.Pass == userDto.Password.Trim())
+            //                   .FirstOrDefaultAsync();
 
 
             if (loginDb == null)

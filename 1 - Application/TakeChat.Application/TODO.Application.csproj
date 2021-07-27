@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>TODO.Application</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.17" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.17" />
+    <PackageReference Include="NSwag.AspNetCore" Version="13.12.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\2 - Domain\TODO.Domain.csproj" />
+    <ProjectReference Include="..\..\3 - Service\TODO.Service.csproj" />
+    <ProjectReference Include="..\..\4 - Infra\4.1 - Data\TODO.Infra.Data.csproj" />
+  </ItemGroup>
+
+
+</Project>

@@ -5,8 +5,11 @@ Goals:
 The goal for this challenge is to develop a Data Driven Web API using ASP.Net Core 3.1 and
 Entity Framework Core. The Web API must be compliant with the RESTful architecture and transition
 data in json format. We expect to be developed only the Web API and no user interface.
+
 ● An TODO item should NOT be inserted in the database without a description;
+
 ● An TODO item should be inserted;
+
 ● An TODO item should be deleted;
 ● An TODO item should be edited;
 ● All TODO items should be listed;

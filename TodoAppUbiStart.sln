@@ -15,19 +15,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.1 - Data", "4.1 - Data", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.2 - CrossCutting", "4.2 - CrossCutting", "{E49CE82C-AEE7-4E93-A5EB-058834E9718A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TODO.Application", "1 - Application\TakeChat.Application\TODO.Application.csproj", "{0ED85019-AA7B-4120-8EF1-E3ABC5CD3562}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task.Application", "1 - Application\TakeChat.Application\Task.Application.csproj", "{0ED85019-AA7B-4120-8EF1-E3ABC5CD3562}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TODO.Infra.Data", "4 - Infra\4.1 - Data\TODO.Infra.Data.csproj", "{D21FBB07-FDD1-4997-8417-21FF1C5ECD66}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task.Infra.Data", "4 - Infra\4.1 - Data\Task.Infra.Data.csproj", "{D21FBB07-FDD1-4997-8417-21FF1C5ECD66}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TODO.Infra.CrossCutting", "4 - Infra\4.2 - CrossCutting\TODO.Infra.CrossCutting.csproj", "{95376FA4-5348-404D-BCB7-1A319ED2848E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task.Infra.CrossCutting", "4 - Infra\4.2 - CrossCutting\Task.Infra.CrossCutting.csproj", "{95376FA4-5348-404D-BCB7-1A319ED2848E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TODO.Service", "3 - Service\TODO.Service.csproj", "{568A306B-6949-4918-8C74-92D3D76DF001}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task.Service", "3 - Service\Task.Service.csproj", "{568A306B-6949-4918-8C74-92D3D76DF001}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TODO.Domain", "2 - Domain\TODO.Domain.csproj", "{6E0BC482-9744-4F04-B530-31D43FD571A6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task.Domain", "2 - Domain\Task.Domain.csproj", "{6E0BC482-9744-4F04-B530-31D43FD571A6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - Tests", "5 - Tests", "{ABDE5FBE-B554-43F4-9524-83F26B053EB9}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TODO.Tests", "5 - Tests\TakeChat.Tests\TODO.Tests.csproj", "{A609963D-59B2-45E5-9088-858291BF3BEE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,10 +53,6 @@ Global
 		{6E0BC482-9744-4F04-B530-31D43FD571A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E0BC482-9744-4F04-B530-31D43FD571A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E0BC482-9744-4F04-B530-31D43FD571A6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A609963D-59B2-45E5-9088-858291BF3BEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A609963D-59B2-45E5-9088-858291BF3BEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A609963D-59B2-45E5-9088-858291BF3BEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A609963D-59B2-45E5-9088-858291BF3BEE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -71,7 +65,6 @@ Global
 		{95376FA4-5348-404D-BCB7-1A319ED2848E} = {E49CE82C-AEE7-4E93-A5EB-058834E9718A}
 		{568A306B-6949-4918-8C74-92D3D76DF001} = {95429D2A-57BA-41DF-B202-DB5A898880E0}
 		{6E0BC482-9744-4F04-B530-31D43FD571A6} = {1C5C9D39-9079-41CD-97A8-8B1F7000F7F5}
-		{A609963D-59B2-45E5-9088-858291BF3BEE} = {ABDE5FBE-B554-43F4-9524-83F26B053EB9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9795E5E9-B047-4C68-AC05-C84C3DBD3D97}

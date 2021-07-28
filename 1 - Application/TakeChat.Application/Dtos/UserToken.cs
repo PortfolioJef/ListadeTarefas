@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace TODO.Application.Dtos
+namespace Task.Application.Dtos
 {
     public class UserToken
     {

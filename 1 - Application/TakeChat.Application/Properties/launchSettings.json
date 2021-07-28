@@ -17,7 +17,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "TakeChat.Application": {
+    "Task.Application": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "weatherforecast",

@@ -8,9 +8,9 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Text;
-using TakeChat.Infra.Data.Context;
+using Task.Infra.Data.Context;
 
-namespace TakeChat.Application
+namespace Task.Application
 {
     public class Startup
     {
@@ -25,17 +25,17 @@ namespace TakeChat.Application
         public void ConfigureServices(IServiceCollection services)
         {
 
-            services.AddDbContext<TODOAppContext>(options =>
+            services.AddDbContext<taskAppContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
             // Register the Swagger services           
             services.AddSwaggerDocument(config =>
             {
-                config.DocumentName = "TODOApp API";
+                config.DocumentName = "TaskApp API";
                 config.PostProcess = document =>
                 {
                     document.Info.Version = "V1";
-                    document.Info.Title = "TODOChat API";
+                    document.Info.Title = "Task API";
                     document.Info.Description = "API para Aplicação de lista de tarefas";
                     document.Info.Contact = new NSwag.OpenApiContact
                     {

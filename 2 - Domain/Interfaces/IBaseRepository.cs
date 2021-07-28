@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using TakeChat.Domain.Entities;
+using Task.Domain.Entities;
 
-namespace TakeChat.Domain.Interfaces
+namespace Task.Domain.Interfaces
 {
     public interface IBaseRepository<TEntity> where TEntity : BaseEntity
     {

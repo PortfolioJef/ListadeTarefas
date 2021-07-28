@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using TakeChat.Domain.Entities;
+using Task.Domain.Entities;
 //using FluentValidation;
 
-namespace TakeChat.Domain.Interfaces
+namespace Task.Domain.Interfaces
 {
   public  class IBaseService<TEntity> where TEntity : BaseEntity
     {

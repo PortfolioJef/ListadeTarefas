@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <AssemblyName>TODO.Application</AssemblyName>
+    <AssemblyName>Task.Application</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
@@ -12,9 +12,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\2 - Domain\TODO.Domain.csproj" />
-    <ProjectReference Include="..\..\3 - Service\TODO.Service.csproj" />
-    <ProjectReference Include="..\..\4 - Infra\4.1 - Data\TODO.Infra.Data.csproj" />
+    <ProjectReference Include="..\..\2 - Domain\Task.Domain.csproj" />
+    <ProjectReference Include="..\..\3 - Service\Task.Service.csproj" />
+    <ProjectReference Include="..\..\4 - Infra\4.1 - Data\Task.Infra.Data.csproj" />
   </ItemGroup>
 
 

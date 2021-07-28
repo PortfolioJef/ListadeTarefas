@@ -1,29 +1,28 @@
 ﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using System;
-using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
-using TODO.Application.Dtos;
+using Task.Application.Dtos;
+using Task.Infra.Data.Context;
 
-namespace TODO.Application.Controllers
+namespace Task.Application.Controllers
 {
     [Authorize]
     [Route("api/[controller]")]
     [ApiController]
-    public class LoginController : ControllerBase
+    public class UserController : ControllerBase
     {
-        private readonly DbContext _context;
+        private readonly taskAppContext _context;
         private readonly IConfiguration _configuration;
 
-        public LoginController(IConfiguration configuration, DbContext context)
+        public UserController(IConfiguration configuration, taskAppContext context)
         {
             _configuration = configuration;
             _context = context;
@@ -33,10 +32,10 @@ namespace TODO.Application.Controllers
         [HttpPost("Login")]
         public async Task<ActionResult<UserToken>> Login([FromBody] UserDto userDto)
         {
-            // var user = _userService.Authenticate(userDto.Username, userDto.Password);
-            //var loginDb = await _context.Login
-            //                   .Where(L => L.UserLogin == userDto.Login.Trim() && L.Pass == userDto.Password.Trim())
-            //                   .FirstOrDefaultAsync();
+            //var user = _userService.Authenticate(userDto.Username, userDto.Password);
+            var loginDb = await _context.Users
+                               .Where(L => L.Email == userDto.Login.Trim() && L.Pass == userDto.Password.Trim())
+                               .FirstOrDefaultAsync();
 
 
             if (loginDb == null)
@@ -44,7 +43,7 @@ namespace TODO.Application.Controllers
 
             if (loginDb != null)
             {
-                return BuildToken(loginDb.id, loginDb.Name, loginDb.UserLogin);
+                return BuildToken(loginDb.Id, loginDb.Name, loginDb.Email);
             }
             else
             {
